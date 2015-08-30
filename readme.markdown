@@ -19,7 +19,8 @@ lob({
   username: '{{your username}}',
   password: '{{your password}}',
   title: 'Example Blog Article',
-  url: 'http://exampleblog.com/articles/example-blog-article'
+  url: 'http://exampleblog.com/articles/example-blog-article',
+  tags: ['web']
 }, done);
 
 function done (err, res, body, story) {
@@ -40,6 +41,7 @@ Property      | Description
 `title`       | The title for the story
 `url`         | The URL to the story
 `description` | A description of the story
+`tags`        | An array of tags for your story
 `author`      | Boolean value indicating whether the submitter is the author of the story
 
 When the requests against Lobste.rs are done, the `done` callback will be invoked with four arguments.
